@@ -17,7 +17,7 @@ function handSelection() {
   game.playerHand = this.dataset.option;
   console.log(game.playerHand);
   hands.forEach((hand) => (hand.style.boxShadow = ""));
-  this.style.boxShadow = "0 0 0 4px red";
+  this.style.boxShadow = "0 0 0 4px darkgreen";
 }
 
 // const handSelection = (e) => {
@@ -60,17 +60,14 @@ function publishResult(player, ai, result) {
     document.querySelector("p.wins span").textContent = ++gameSummary.wins;
     document.querySelector('[data-summary="who-win"]').textContent =
       "Ty wygrałeś!!!!";
-    document.querySelector('[data-summary="who-win"]').style.color = "green";
   } else if (result === "loss") {
     document.querySelector("p.losses span").textContent = ++gameSummary.losses;
     document.querySelector('[data-summary="who-win"]').textContent =
       "Komputer wygrał :(";
-    document.querySelector('[data-summary="who-win"]').style.color = "red";
   } else {
     document.querySelector("p.draws span").textContent = ++gameSummary.draws;
     document.querySelector('[data-summary="who-win"]').textContent =
       "Remis :\\";
-    document.querySelector('[data-summary="who-win"]').style.color = "gray";
   }
 }
 
