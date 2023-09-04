@@ -7,3 +7,28 @@ This project is a popular game **_“rock, paper, scissors”_**. To play, simpl
 
 If you don't select an image and click 'Let's play,' a message will appear on the page asking you to choose an image.
 I implemented this project using **_JavaScript_**, **_CSS_**, and **_HTML_**.
+
+## Usage 
+
+First, run the development server:
+
+```bash
+git clone https://github.com/Wikaobl/rock-paper-scissors
+```
+
+Next, install dependencies
+
+```bash
+cd rock-paper-scissors
+npm install
+```
+
+Run the project
+
+```bash
+npm run
+```
+
+After successfully starting the project, open your web browser and go to the specified URL http://localhost:3000
+
+### Have a nice game! 🐸
